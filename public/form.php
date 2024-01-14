@@ -4,7 +4,7 @@ if (isset($_POST['send'])) {
 	if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
 		$name = $_POST['name'];
 		$sender = $_POST['email'];
-		$receiver = "omar.ramirez94@hotmail.es";
+		$receiver = "nutriologa.valeriaadalid14@gmail.com";
 		$message = $_POST['message'];
 		$subject = "Formulario";
 		$header = "From: $sender" . "\r\n";

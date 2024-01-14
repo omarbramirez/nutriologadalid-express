@@ -43,7 +43,17 @@ app.get("/contact", (req, res) => {
     res.sendFile(filePath);
   });
 
-  app.post("/form.php", (req, res)=>{
+//   app.post("/form.php", (req, res)=>{
+//     const filePath = path.join(__dirname, "public", "form.php");
+//     res.sendFile(filePath);
+//   })
+
+app.get("/appointment-module", (req,res)=>{
+    const filePath = path.join(__dirname, "public", "temporary.html")
+    res.sendFile(filePath)
+})
+
+  app.get("/mail-sent", (req, res)=>{
     const filePath = path.join(__dirname, "public", "mail-sent.html");
     res.sendFile(filePath);
   })
