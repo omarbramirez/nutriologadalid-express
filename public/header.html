@@ -1,0 +1,38 @@
+
+<header>
+<link rel="icon" href="favicon.ico">
+<script src="https://kit.fontawesome.com/f468de835c.js" crossorigin="anonymous"></script>
+    <nav id="menu">
+    <a href=" /" id="logo" style="width: 25%;"><img src="assets/images/logo002.png" alt="logo"></a>
+    <i id= "hamburger" class="fas fa-bars"></i>
+        <ul class="menu_options">
+            <li><a href="services">Servicios</a></li>
+            <li><a href="testimonials">Testimoniales</a></li>
+            <li><a href="contact">Contacto</a></li>
+            <li><a href="aboutme">Sobre mí</a></li>
+              <li><a href="https://valeria-adalid-appointment-app.herokuapp.com/" class="products-button">Agenda tu Consulta</a></li>
+        </ul>
+    </nav>
+    <ul class="_menu_options">
+            <li><a href="services">Servicios</a></li>
+            <li><a href="testimonials">Testimoniales</a></li>
+            <li><a href="contact">Contacto</a></li>
+            <li><a href="aboutme">Sobre mí</a></li>
+              <li><a href="https://valeria-adalid-appointment-app.herokuapp.com/" class="products-button" style="background-color:transparent">Agenda tu Consulta</a></li>
+            <ul>
+        <li class="f_icon"><a href="https://www.instagram.com/consulta_nutri/" class="fab fa-instagram" target="_blank"></a></li>
+        <li class="f_icon"><a href="https://www.facebook.com/nutriologavaleria.adalid" class="fab fa-facebook-f" target="_blank"></a></li>
+        <li class="f_icon"><a href="https://www.tiktok.com/@nutrivaleria8" class="fab fa-tiktok" target="_blank"></a></li>
+    </ul>
+        <p><a class="footer-link" href="privacypolicy">Políticas de privacidad</a><br>
+        </ul>
+
+    <script>
+        const bars = document.querySelector('#hamburger');
+        const menu = document.querySelector('._menu_options');
+
+        bars.addEventListener('click', function(){
+            menu.classList.toggle('m_activate');
+        });
+    </script>
+</header>

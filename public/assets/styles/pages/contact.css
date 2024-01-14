@@ -1,0 +1,62 @@
+.contact-content{
+    display: flex;
+    justify-content: right;
+}
+
+.contact-form,
+.contact-calltoaction{
+    margin: 0;
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 60%;
+}
+
+.contact-form form input,
+.contact-form form textarea{
+    font-family: var(--font-1);
+    min-width: 90%;
+    max-width: 90%;
+    border: 3px solid var(--primary-white);
+    background-color: inherit;
+    color: var(--white-3);
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus{
+    outline: none;
+}
+
+.contact-form form input[type=submit]{
+    display: block;
+    min-width: 135px;
+    max-width: 135px;
+    background-color: none;
+    border: 2px solid var(--primary-white);
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+    color: var(--primary);
+    margin: 1rem auto;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+}
+
+.contact-form form input[type=submit]:hover{
+    background-color: var(--primary);
+    color: var(--black-3);
+}

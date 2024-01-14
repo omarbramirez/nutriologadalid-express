@@ -1,0 +1,73 @@
+.header-aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    height: calc(30vh + 350px);
+    width: 100%;
+    position: static;
+}
+
+.calltoaction-header-aboutme{
+    display: block;
+    margin-right: 50px;
+    background-color: var(--graduation-4);
+    background-image: url(../../images/calltoaction.png);
+    background-size: cover;
+    width: 40%;
+    height: auto;
+    padding: 2vw;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bio-storytelling{
+    background-color: var(--primary-white);
+}
+
+.bio-storytelling h3{
+    text-align: center;
+    color: var(--black-1);
+}
+
+.bio-storytelling p{
+    text-align: center;
+    color: var(--black-1);
+}
+
+.bio-storytelling b{
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.list{
+    border-top: 1.5px solid var(--white-5);
+border-bottom: 1.5px solid var(--white-5);
+    margin: 40px auto;
+    padding: 40px 16%;
+}
+
+.list h2,
+.list p{
+    color: var(--black-1);
+    text-align: center;
+}
+
+.list-element::before{
+    content: " ";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--black-5);
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.list-element{
+    text-align: center;
+}

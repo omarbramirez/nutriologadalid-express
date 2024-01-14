@@ -1,0 +1,114 @@
+.testimonials-content{
+    padding: 0;
+    padding-top: 2vw;
+    margin: 0;
+    background-color: var(--graduation-2);
+    position: static;
+}
+
+.testimonials-content h1{
+    grid-area: title;
+    color: var(--black-1);
+    margin: 5vw auto;
+    margin-bottom: 3vw;
+    align-self: center;
+}
+
+.video{
+    width: 50%;
+    height: 30vw;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    display: block;
+    margin-top: 5rem;
+
+}
+
+.testimonials{
+    margin: 5rem auto;
+}
+
+.testimonial{
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* height: 70vh; */
+    align-items: center;
+    text-align: left;
+    position: static;
+    margin: 5rem 2rem;
+    margin-bottom: 10rem;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease;
+    transition: opacity 0.8s ease;
+}
+
+.before_after{
+    padding: 0;
+    justify-content: space-around;
+}
+
+.testimonial .review{
+    background-color: var(--primary-white);
+}
+
+.before_after .review{
+    width: 25%;
+}
+
+.proofs{
+    width: 30vw;
+    position: static;
+    margin-bottom: 0;
+    }
+
+img[alt~="proof"]{
+    display: block;
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.proof{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease;
+    transition: opacity 0.8s ease;
+}
+
+.proof.active{
+    opacity: 1;
+}
+
+.nav-proofs{
+    width: 100px;
+    padding-bottom: 0px;
+    margin: 20px auto 0px;
+}
+
+.proof_dot{
+    background: var(--white-5) !important;
+}
+
+.proof_dot.active{
+    background: var(--complementary-2) !important;
+}
+
+
+#fb_video_wrapper{
+    display: flex;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
