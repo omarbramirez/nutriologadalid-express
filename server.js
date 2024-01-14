@@ -25,6 +25,11 @@ const transporter = nodemailer.createTransport({
     },
   });
 
+  app.get("/", (req, res) => {
+    const filePath = path.join(__dirname, "public", "index.html");
+    res.sendFile(filePath);
+  });
+
 app.get("/services", (req, res) => {
     const filePath = path.join(__dirname, "public", "privacypolicy.html");
     res.sendFile(filePath);
@@ -54,27 +59,6 @@ app.get("/contact", (req, res) => {
     const filePath = path.join(__dirname, "public", "mail-sent.html");
     res.sendFile(filePath);
   })
-  /*
-  app.post("/enviar-correo", (req, res) => {
-    const { name, email, message } = req.body;
-  
-    // Configura el contenido del correo
-    const mailOptions = {
-      from: email,
-      to: "omar.ramirez94@hotmail.es",
-      subject: "Formulario de contacto",
-      text: `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`,
-    };
-  
-    // Envía el correo
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return res.status(500).send(error.toString());
-      }
-      res.send("Correo enviado exitosamente.");
-    });
-});
-*/
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
